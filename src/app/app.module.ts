@@ -7,18 +7,21 @@ import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
 import { CharacterDetailComponent } from './character-detail/character-detail.component';
 
+import { CharacterService } from './character.service';
+import { MessagesComponent } from './messages/messages.component';
 @NgModule({
   declarations: [
     AppComponent,
     CharactersComponent,
     CharacterDetailComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CharacterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
